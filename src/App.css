@@ -1,0 +1,126 @@
+/* ===========================
+   Global Layout
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    #f5f7fa,
+    #dfe9f3
+  );
+
+  color: #2d3436;
+
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===========================
+   Main App
+=========================== */
+
+#root {
+  width: 100%;
+}
+
+/* ===========================
+   Pokemon Collection
+=========================== */
+
+.collection-section {
+  width: 90%;
+  max-width: 1400px;
+
+  margin: 70px auto;
+}
+
+.section-title {
+  text-align: center;
+
+  font-size: 2.7rem;
+
+  color: #2d3436;
+
+  margin-bottom: 10px;
+}
+
+.collection-count {
+  text-align: center;
+
+  color: #636e72;
+
+  margin-bottom: 40px;
+
+  font-size: 1.1rem;
+}
+
+/* ===========================
+   Empty State
+=========================== */
+
+.no-results {
+  padding: 80px 20px;
+
+  text-align: center;
+}
+
+.no-results h2 {
+  font-size: 2rem;
+
+  color: #ff4757;
+
+  margin-bottom: 15px;
+}
+
+.no-results p {
+  color: #636e72;
+
+  font-size: 1rem;
+}
+
+/* ===========================
+   Section Spacing
+=========================== */
+
+section {
+  margin-bottom: 80px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .collection-count {
+    font-size: 1rem;
+  }
+
+  section {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .no-results h2 {
+    font-size: 1.5rem;
+  }
+}

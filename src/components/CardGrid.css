@@ -1,0 +1,16 @@
+.card-grid {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+
+    justify-items: center;
+
+    align-items: start;
+}

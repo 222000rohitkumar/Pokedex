@@ -1,0 +1,134 @@
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 8%;
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  font-size: 2rem;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: #2d3436;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ===========================
+   Navigation Links
+=========================== */
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+
+  color: #2d3436;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff4757;
+}
+
+/* ===========================
+   Theme Button
+=========================== */
+
+.theme-btn {
+  padding: 10px 18px;
+
+  border: none;
+  border-radius: 30px;
+
+  background: linear-gradient(
+    135deg,
+    #ffcb05,
+    #ff9800
+  );
+
+  color: white;
+
+  font-size: 0.95rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 18px rgba(255, 152, 0, 0.4);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .theme-btn {
+    width: 180px;
+  }
+}
