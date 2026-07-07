@@ -7,7 +7,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
-import pokemonRoutes from "./routes/pokemonRoutes.js";
+import pokemonRoutes from "./routes/PokemonRoutes.js";
 
 dotenv.config();
 
